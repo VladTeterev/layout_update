@@ -49,15 +49,12 @@ function showTitleOfPage() {
   }, 2800);
 }
 
-// Check screen width of device
-function manageElementByScreenWidth() {
-  const screenWidth = window.innerWidth;
-  if (screenWidth > 1300) {
-    initLaptopSlider();
-  } else {
-    initFirstMobileSlider();
-    initSecondMobileSlider();
-  }
+// Active elements of page
+function activeElementsOfPage() {
+  showTitleOfPage()
+  initLaptopSlider();
+  initFirstMobileSlider();
+  initSecondMobileSlider();
 }
 
 // Slider for laptop version
@@ -334,6 +331,4 @@ function chooseCategory() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", showTitleOfPage);
-window.addEventListener("load", manageElementByScreenWidth);
-window.addEventListener("resize", manageElementByScreenWidth);
+document.addEventListener("DOMContentLoaded", activeElementsOfPage());
