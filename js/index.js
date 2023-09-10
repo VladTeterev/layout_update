@@ -1,21 +1,21 @@
 // Array with images, descriptions, titles
 let images = [
   {
-    url: "../images/image1.jpg",
+    url: "images/image1.jpg",
     title: "Rostov-on-Don, Admiral",
     city: "Rostov-on-Don<br>LCD admiral",
     area: "81 m2",
     time: "3.5 months",
   },
   {
-    url: "../images/image2.jpg",
+    url: "images/image2.jpg",
     title: "Sochi Thieves",
     city: "Sochi<br>Thieves",
     area: "105 m2",
     time: "4 months",
   },
   {
-    url: "../images/image3.jpg",
+    url: "images/image3.jpg",
     title: "Rostov-on-Don Patriotic",
     city: "Rostov-on-Don<br>Patriotic",
     area: "93 m2",
@@ -25,9 +25,9 @@ let images = [
 
 // Array for the second slider of the mobile version
 let imagesForSecondMobileSlider = [
-  { url: "../images/firstSlide.png" },
-  { url: "../images/living_room2.png" },
-  { url: "../images/living_room3.png" },
+  { url: "images/firstSlide.png" },
+  { url: "images/living_room2.png" },
+  { url: "images/living_room3.png" },
 ];
 
 // Function for show conten of the first section with interval
