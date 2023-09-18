@@ -39,14 +39,14 @@ function showTitleOfPage() {
   const btnApplication = contentOfTitle.querySelector(".btn-application");
   setInterval(() => {
     pageTitle.style.opacity = 1;
-  }, 1000);
+  }, 1500);
   setInterval(() => {
     pageDescription.style.opacity = 1;
-  }, 2000);
+  }, 2500);
   setInterval(() => {
     btnCalculate.style.opacity = 1;
     btnApplication.style.opacity = 1;
-  }, 2800);
+  }, 3200);
 }
 
 // Active elements of page
