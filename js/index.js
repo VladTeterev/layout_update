@@ -72,7 +72,6 @@ function initLaptopSlider() {
 
   sliderActive();
   initArrows();
-  initAutoplay();
 
   // Slider activation
   function sliderActive() {
@@ -142,14 +141,6 @@ function initLaptopSlider() {
       });
     });
   }
-  // Autoplay slider
-  function initAutoplay() {
-    setInterval(() => {
-      let curNumber = +sliderImages.querySelector(".active").dataset.index;
-      let nextNumber = curNumber === images.length - 1 ? 0 : curNumber + 1;
-      moveSlider(nextNumber);
-    }, 5000);
-  }
 
   //Changing the state of elements when switching slides
   function moveSlider(num) {
@@ -188,7 +179,6 @@ function initFirstMobileSlider() {
   initImages();
   initArrows();
   initTitles();
-  initAutoplay();
 
   // Create element for image and add
   function initImages() {
@@ -236,15 +226,6 @@ function initFirstMobileSlider() {
     });
   }
 
-  // For slider autoplay
-  function initAutoplay() {
-    setInterval(() => {
-      let curNumber = +sliderImages.querySelector(".active").dataset.index;
-      let nextNumber = curNumber === images.length - 1 ? 0 : curNumber + 1;
-      moveSlider(nextNumber);
-    }, 5000);
-  }
-
   function moveSlider(num) {
     sliderImages.querySelector(".active").classList.remove("active");
     sliderImages.querySelector(".n" + num).classList.add("active");
@@ -273,7 +254,6 @@ function initSecondMobileSlider() {
 
   initImages();
   initArrows();
-  initAutoplay();
 
   // Create element for image and add
   function initImages() {
@@ -301,14 +281,7 @@ function initSecondMobileSlider() {
       });
     });
   }
-  // For slider autoplay
-  function initAutoplay() {
-    setInterval(() => {
-      let curNumber = +sliderImages.querySelector(".active").dataset.index;
-      let nextNumber = curNumber === images.length - 1 ? 0 : curNumber + 1;
-      moveSlider(nextNumber);
-    }, 5000);
-  }
+  
   // Change slider images
   function moveSlider(num) {
     sliderImages.querySelector(".active").classList.remove("active");
@@ -331,4 +304,4 @@ function chooseCategory() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", activeElementsOfPage());
+document.addEventListener("DOMContentLoaded", activeElementsOfPage);

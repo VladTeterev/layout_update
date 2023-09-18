@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 body {
-    margin: 0px;
+    margin: 0 auto;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -89,6 +89,7 @@ button {
     .header {
         background: #131313;
         height: 83px;
+        width: 100%;
     }
 
     .container {
@@ -113,15 +114,6 @@ button {
     margin: 0 auto;
     padding-top: 194px;
     position: relative;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7)
 }
 
 .hero-container {
@@ -265,7 +257,7 @@ button {
 }
 
 .slider_discription {
-    width: 442px;
+    /* width: 442px; */
     margin-top: 176px;
     margin-left: 150px;
 }
@@ -288,7 +280,7 @@ button {
     font-size: 13px;
 }
 
-.title_discription p {
+.title_discr {
     margin-top: 34px;
 }
 
@@ -418,7 +410,6 @@ button {
     left: 0;
     top: 0;
     opacity: 0;
-    transition: opacity 800ms ease;
 }
 
 .slider__images .image.active {
@@ -458,12 +449,11 @@ button {
     }
 
     .mobile__description {
-        display: initial;
         display: grid;
-        grid-template-columns: 200px 200px;
+        grid-template-columns: 150px 150px;
         grid-template-rows: 85px 85px;
         grid-gap: 34px;
-        margin: 42px 0 0 40px;
+        margin: 42px 0 0 15px;
     }
 
     .content {
@@ -488,24 +478,27 @@ button {
 
     .title__descr {
         text-align: center;
+        padding: 32px;
     }
 
-    .mobile-slider-first__img, .mobile-slider-first__arrows {
+    .mobile-slider__constainer {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
 
     .mobile-slider-first__arrows {
         position: absolute;
-        margin: -142px 0 150px 80px;
+        margin: -142px 0 150px 12px;
     }
 
     .left-arrow {
         margin: 0 241px 0 0;
     }
     .mobile-slider-first__img .image {
+        position: relative;
         opacity: 0;
-        transition: opacity 800ms ease;
     }
 
     .mobile-slider-first__img .active {
@@ -728,7 +721,7 @@ input[type=submit] {
         display: flex;
         justify-content: center;
         position: relative;
-        top: -80px;
+        top: -78px;
         background: #131313;
     }
 
@@ -750,7 +743,7 @@ input[type=submit] {
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -80px;
+        top: -79px;
         height: 250px;
         align-items: center;
         background: #131313;
@@ -1182,7 +1175,6 @@ input[type=submit] {
 
     .mobile-slider-second__img .image {
         opacity: 0;
-        transition: opacity 800ms ease;
     }
 
     .mobile-slider-second__img .active {
