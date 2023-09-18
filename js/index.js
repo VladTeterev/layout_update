@@ -281,7 +281,7 @@ function initSecondMobileSlider() {
       });
     });
   }
-  
+
   // Change slider images
   function moveSlider(num) {
     sliderImages.querySelector(".active").classList.remove("active");
